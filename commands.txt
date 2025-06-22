@@ -46,10 +46,10 @@ git branch -a
 git branch -v
     muestra el último commit de cada rama local
 
-git branch [nombre rama]
-    crea una rama nueva
+git switch -c nueva-rama
+    crea y cambia a nueva rama
 
-git checkout [nombre rama]
+git switch [nombre rama]
     cambia de rama
 
 git branch -d / -D [nombre rama]
@@ -66,3 +66,10 @@ git branch --merged
 
 git branch --no-merged
     ver ramas que no han sido fusionadas
+
+//------------- RESTORE -------------
+git restore [nombre archivo]
+    restaurar archivo desde staging o commit
+    
+git restore --source=[nombre rama o commit] [nombre archivo]
+    restaurar archivo desde otra rama
