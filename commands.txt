@@ -1,0 +1,26 @@
+//------------- LOG -------------
+git log
+    muestra una lista de commits
+git log -1
+    muestra el ultimo commit
+git log -n [numero]
+    limita la cantidad de commits
+git log --author=[autor]
+    muestra solo commits hechos por un autor específico
+git log --grep=[palabra]
+    busca commits que contengan una palabra en el mensaje.
+git log --since=["DD-MM-YYYY"] --until=["DD-MM-YYYY"]
+    muestra commits entre dos fechas específicas.
+git log --oneline
+    muestra cada commit en una línea 
+git log --graph
+    muestra un gráfico ASCII del árbol de ramas
+git log --all
+    muestra commits de todas las ramas|
+git log --pretty=format:"%h - %an - %ar - %s"
+    esto te da una vista compacta y legible:
+        %h: hash corto
+        %an: autor
+        %ar: tiempo relativo
+        %s: mensaje
+//------------- LOG -------------
