@@ -1,26 +1,68 @@
 //------------- LOG -------------
 git log
     muestra una lista de commits
+
 git log -1
     muestra el ultimo commit
+
 git log -n [numero]
     limita la cantidad de commits
+
 git log --author=[autor]
     muestra solo commits hechos por un autor específico
+
 git log --grep=[palabra]
     busca commits que contengan una palabra en el mensaje.
+
 git log --since=["DD-MM-YYYY"] --until=["DD-MM-YYYY"]
     muestra commits entre dos fechas específicas.
+
 git log --oneline
     muestra cada commit en una línea 
+
 git log --graph
     muestra un gráfico ASCII del árbol de ramas
+
 git log --all
     muestra commits de todas las ramas|
+
 git log --pretty=format:"%h - %an - %ar - %s"
     esto te da una vista compacta y legible:
         %h: hash corto
         %an: autor
         %ar: tiempo relativo
         %s: mensaje
-//------------- LOG -------------
+
+//------------- BRANCH -------------
+git branch
+    lista ramas locales
+
+git branch -r
+    lista ramas remotas
+
+git branch -a
+    lista todas las ramas
+
+git branch -v
+    muestra el último commit de cada rama local
+
+git branch [nombre rama]
+    crea una rama nueva
+
+git checkout [nombre rama]
+    cambia de rama
+
+git branch -d / -D [nombre rama]
+    elimina la rama (normal / forzado)
+
+git branch -m [nombre nuevo]
+    renombrar la rama actual
+
+git branch -m [nombre viejo] [nombre nuevo]
+    renombrar otra rama
+
+git branch --merged
+    ver ramas que ya fueron fusionadas a la actual
+
+git branch --no-merged
+    ver ramas que no han sido fusionadas
