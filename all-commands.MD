@@ -87,7 +87,13 @@
 - **git commit --amend --no-edit**  
   Mantiene el mensaje anterior tal cual, útil para agregar un archivo que olvidaste.
 
-## PRUEBA
+## LS-TREE
 
-- **nueva rama**  
-  (Nota: Este comando parece incompleto o es un comentario)
+- **git ls-tree -r --name-only HEAD**  
+  Lista todos los archivos que tiene el ultimo commit
+
+- **git ls-tree -r --name-only [id commit]**  
+  Lista todos los archivos que tiene un commit
+
+- **git ls-tree HEAD:src/**  
+  Lista el contenido de la carpeta src/ en el último commit
