@@ -82,3 +82,14 @@
 
 - **git ls-tree HEAD:src/**  
   Lista el contenido de la carpeta src/ en el último commit
+  
+## RESET
+
+- **git reset --soft HEAD**  
+  Elimina el ultimo commit
+
+- **git reset --mixed HEAD**  
+  Deshace el git add sin perder los cambios
+
+- **git reset --hard HEAD**  
+  Elimina el ultimo commit
