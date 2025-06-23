@@ -5,10 +5,7 @@
 - **git log**  
   Muestra una lista de commits.
 
-- **git log -1**  
-  Muestra el último commit.
-
-- **git log -n [numero]**  
+- **git log -[numero]**  
   Limita la cantidad de commits.
 
 - **git log --author=[autor]**  
@@ -81,9 +78,11 @@
 - **git commit -m [mensaje]**  
   Guarda una instantánea del estado actual del proyecto en el historial de Git.
 
+- **git add .**  
 - **git commit --amend**  
   Permite modificar el último commit, ya sea el mensaje o añadir archivos olvidados.
-
+  
+- **git add .**  
 - **git commit --amend --no-edit**  
   Mantiene el mensaje anterior tal cual, útil para agregar un archivo que olvidaste.
 
@@ -93,18 +92,18 @@
   Lista todos los archivos que tiene el ultimo commit
 
 - **git ls-tree -r --name-only [id commit]**  
-  Lista todos los archivos que tiene un commit
+  Lista todos los archivos que tiene un commit determinado
 
 - **git ls-tree HEAD:src/**  
   Lista el contenido de la carpeta src/ en el último commit
 
 ## RESET
 
-- **git reset --soft HEAD**  
-  Elimina el ultimo commit
+- **git reset --soft HEAD~1**  
+  Elimina el último commit, pero conservar los cambios en el área de staging
 
 - **git reset --mixed HEAD**  
   Deshace el git add sin perder los cambios
 
-- **git reset --hard HEAD**  
+- **git reset --hard HEAD~1**  
   Elimina el ultimo commit
