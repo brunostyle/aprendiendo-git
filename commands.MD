@@ -1,83 +1,93 @@
-//------------- LOG -------------
-git log
-    muestra una lista de commits
+# Git Commands Cheat Sheet
 
-git log -1
-    muestra el ultimo commit
+## LOG
 
-git log -n [numero]
-    limita la cantidad de commits
+- **git log**  
+  Muestra una lista de commits.
 
-git log --author=[autor]
-    muestra solo commits hechos por un autor específico
+- **git log -1**  
+  Muestra el último commit.
 
-git log --grep=[palabra]
-    busca commits que contengan una palabra en el mensaje.
+- **git log -n [numero]**  
+  Limita la cantidad de commits.
 
-git log --since=["DD-MM-YYYY"] --until=["DD-MM-YYYY"]
-    muestra commits entre dos fechas específicas.
+- **git log --author=[autor]**  
+  Muestra solo commits hechos por un autor específico.
 
-git log --oneline
-    muestra cada commit en una línea 
+- **git log --grep=[palabra]**  
+  Busca commits que contengan una palabra en el mensaje.
 
-git log --graph
-    muestra un gráfico ASCII del árbol de ramas
+- **git log --since=["DD-MM-YYYY"] --until=["DD-MM-YYYY"]**  
+  Muestra commits entre dos fechas específicas.
 
-git log --all
-    muestra commits de todas las ramas|
+- **git log --oneline**  
+  Muestra cada commit en una línea.
 
-git log --pretty=format:"%h - %an - %ar - %s"
-    esto te da una vista compacta y legible:
-        %h: hash corto
-        %an: autor
-        %ar: tiempo relativo
-        %s: mensaje
+- **git log --graph**  
+  Muestra un gráfico ASCII del árbol de ramas.
 
-//------------- BRANCH -------------
-git branch
-    lista ramas locales
+- **git log --all**  
+  Muestra commits de todas las ramas.
 
-git branch -r
-    lista ramas remotas
+- **git log --pretty=format:"%h - %an - %s - %ar"**  
+  Da una vista compacta y legible:  
+  **%h**: hash corto, **%an**: autor, **%s**: mensaje, **%ar**: tiempo relativo
 
-git branch -a
-    lista todas las ramas
+## BRANCH
 
-git branch -v
-    muestra el último commit de cada rama local
+- **git branch**  
+  Lista ramas locales.
 
-git switch -c nueva-rama
-    crea y cambia a nueva rama
+- **git branch -r**  
+  Lista ramas remotas.
 
-git switch [nombre rama]
-    cambia de rama
+- **git branch -a**  
+  Lista todas las ramas.
 
-git branch -d / -D [nombre rama]
-    elimina la rama (normal / forzado)
+- **git branch -v**  
+  Muestra el último commit de cada rama local.
 
-git branch -m [nombre nuevo]
-    renombrar la rama actual
+- **git switch -c nueva-rama**  
+  Crea y cambia a nueva rama.
 
-git branch -m [nombre viejo] [nombre nuevo]
-    renombrar otra rama
+- **git switch [nombre rama]**  
+  Cambia de rama.
 
-git branch --merged
-    ver ramas que ya fueron fusionadas a la actual
+- **git branch -d / -D [nombre rama]**  
+  Elimina la rama (normal / forzado).
 
-git branch --no-merged
-    ver ramas que no han sido fusionadas
+- **git branch -m [nombre nuevo]**  
+  Renombra la rama actual.
 
-//------------- RESTORE -------------
-git restore [nombre archivo]
-    restaurar archivo desde staging o commit
-    
-git restore --source=[nombre rama o commit] [nombre archivo]
-    restaurar archivo desde otra rama
+- **git branch -m [nombre viejo] [nombre nuevo]**  
+  Renombra otra rama.
 
-//------------- COMMIT -------------
-git commit -m [mensaje]
-    guarda una instantánea del estado actual del proyecto en el historial de Git
-git commit --amend
-    permite modificar el último commit, ya sea el mensaje o añadir archivos olvidados
-git commit --amend --no-edit
-    mantiene el mensaje anterior tal cual, útil para agregar un archivo que olvidaste
+- **git branch --merged**  
+  Ver ramas que ya fueron fusionadas a la actual.
+
+- **git branch --no-merged**  
+  Ver ramas que no han sido fusionadas.
+
+## RESTORE
+
+- **git restore [nombre archivo]**  
+  Restaura archivo desde staging o commit.
+
+- **git restore --source=[nombre rama o commit] [nombre archivo]**  
+  Restaura archivo desde otra rama.
+
+## COMMIT
+
+- **git commit -m [mensaje]**  
+  Guarda una instantánea del estado actual del proyecto en el historial de Git.
+
+- **git commit --amend**  
+  Permite modificar el último commit, ya sea el mensaje o añadir archivos olvidados.
+
+- **git commit --amend --no-edit**  
+  Mantiene el mensaje anterior tal cual, útil para agregar un archivo que olvidaste.
+
+## PRUEBA
+
+- **nueva rama**  
+  (Nota: Este comando parece incompleto o es un comentario)
