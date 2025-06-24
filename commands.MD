@@ -1,5 +1,3 @@
-# Git Commands Cheat Sheet
-
 ## LOG
 
 - **git log**  
