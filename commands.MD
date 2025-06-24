@@ -3,17 +3,43 @@
 ## 📦 Repositorio y configuración
 
 - **GIT INIT**
-- **GIT CLONE**
+  - **git init**  
+    Inicializa un nuevo repositorio Git en un directorio
+
+<!-- - **GIT CLONE** -->
+
 - **GIT CONFIG**
-- **GIT HELP**
+  - **git config --list**  
+    Muestra todas las configuraciones actuales.
+  - **git config --global user.name [nombre]**  
+    Define el nombre de usuario que se usará en todos los repos (a nivel global).
+  - **git config --global user.email [email]**  
+    Define el correo que se usará en todos los repos (a nivel global).
+  - **git config user.name [nombre]**  
+    Define el nombre solo para el repositorio actual.
+  - **git config user.email [email]**  
+    Define el email solo para el repositorio actual.
+  - **git config --global core.editor "code --wait"**  
+  - **git config --global -e**  
+    Establece visual studio code como editor de configuración de git
+  - **git config --global core.autocrlf true**  
+    Estandariza los saltos de línea en windows
+  - **git config --global core.autocrlf input**  
+    Estandariza los saltos de línea en linux/mac
 
 ---
 
 ## 📄 Archivos y cambios
 
 - **GIT ADD**
-- **GIT MV**
-- **GIT RM**
+  - **git add [nombre archivo]**  
+    Agrega archivos o cambios específicos al staging area
+  - **git add .**  
+    Agrega todos los cambios del directorio actual y subdirectorios al staging area
+
+<!-- - **GIT MV** -->
+<!-- - **GIT RM** -->
+
 - **GIT RESTORE**
   - **git restore [nombre archivo]**  
     Restaura archivo desde staging o commit.
@@ -32,7 +58,11 @@
     Mantiene el mensaje anterior tal cual, útil para agregar un archivo que olvidaste.
 
 - **GIT STATUS**
-- **GIT DIFF**
+  - **git status**  
+    Muestra el estado actual del directorio de trabajo y del área de preparación
+
+<!-- - **GIT DIFF** -->
+
 - **GIT RESET**
   - **git reset --soft HEAD~1**  
     Elimina el último commit, pero conservar los cambios en el área de staging
@@ -41,7 +71,7 @@
   - **git reset --hard HEAD~1**  
     Elimina el ultimo commit
 
-- **GIT REVERT**
+<!-- - **GIT REVERT** -->
 
 ---
 
@@ -76,10 +106,10 @@
   - **git ls-tree HEAD:src/**  
     Lista el contenido de la carpeta src/ en el último commit
     
-- **GIT SHOW**
-- **GIT BLAME**
-- **GIT REFLOG**
-- **GIT SHORTLOG**
+<!-- - **GIT SHOW** -->
+<!-- - **GIT BLAME** -->
+<!-- - **GIT REFLOG** -->
+<!-- - **GIT SHORTLOG** -->
 
 ---
 
@@ -106,65 +136,25 @@
     Ver ramas que no han sido fusionadas.
 
 - **GIT SWITCH**
-  - **git switch -c nueva-rama**  
+  - **git switch -c [nombre rama]**  
     Crea y cambia a nueva rama.
   - **git switch [nombre rama]**  
     Cambia de rama.
 
-- **GIT CHECKOUT**
 - **GIT MERGE**
-- **GIT REBASE**
-- **GIT CHERRY-PICK**
+  - **git merge [nombre rama]**  
+    combina los cambios de una rama en otra
+
+<!-- - **GIT REBASE** -->
+<!-- - **GIT CHERRY-PICK** -->
 
 ---
 
 ## 🔄 Sincronización remota
 
-- **GIT REMOTE**
-- **GIT FETCH**
-- **GIT PULL**
-- **GIT PUSH**
-
----
-
-## 📁 Cambios temporales (Stash)
-
-- **GIT STASH**
-
----
-
-## 🔍 Comparación y búsqueda
-
-- **GIT DIFF**
-- **GIT GREP**
-
----
-
-## 🧹 Limpieza y mantenimiento
-
-- **GIT CLEAN**
-- **GIT GC**
-- **GIT FSCK**
-- **GIT PRUNE**
-
----
-
-## 📦 Etiquetas y versiones
-
-- **GIT TAG**
-- **GIT DESCRIBE**
-
----
-
-## 🧪 Avanzado y otros
-
-- **GIT ARCHIVE**
-- **GIT BISECT**
-- **GIT SUBMODULE**
-- **GIT WORKTREE**
-- **GIT NOTES**
-- **GIT APPLY**
-- **GIT AM**
-- **GIT FORMAT-PATCH**
+<!-- - **GIT REMOTE** -->
+<!-- - **GIT FETCH** -->
+<!-- - **GIT PULL** -->
+<!-- - **GIT PUSH** -->
 
 ---
