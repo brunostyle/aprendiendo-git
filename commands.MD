@@ -1,107 +1,170 @@
-## LOG
+# Comandos de Git
 
-- **git log**  
-  Muestra una lista de commits.
+## 📦 Repositorio y configuración
 
-- **git log -[numero]**  
-  Limita la cantidad de commits.
+- **GIT INIT**
+- **GIT CLONE**
+- **GIT CONFIG**
+- **GIT HELP**
 
-- **git log --author=[autor]**  
-  Muestra solo commits hechos por un autor específico.
+---
 
-- **git log --grep=[palabra]**  
-  Busca commits que contengan una palabra en el mensaje.
+## 📄 Archivos y cambios
 
-- **git log --since=["DD-MM-YYYY"] --until=["DD-MM-YYYY"]**  
-  Muestra commits entre dos fechas específicas.
+- **GIT ADD**
+- **GIT MV**
+- **GIT RM**
+- **GIT RESTORE**
+  - **git restore [nombre archivo]**  
+    Restaura archivo desde staging o commit.
+  - **git restore --source=[nombre rama o commit] [nombre archivo]**  
+    Restaura archivo desde otra rama.
+---
 
-- **git log --oneline**  
-  Muestra cada commit en una línea.
+## 📥 Confirmaciones (commits)
 
-- **git log --graph**  
-  Muestra un gráfico ASCII del árbol de ramas.
+- **GIT COMMIT**
+  - **git commit -m [mensaje]**  
+    Guarda una instantánea del estado actual del proyecto en el historial de Git.
+  - **git commit --amend**  
+    Permite modificar el último commit, ya sea el mensaje o añadir archivos olvidados.
+  - **git commit --amend --no-edit**  
+    Mantiene el mensaje anterior tal cual, útil para agregar un archivo que olvidaste.
 
-- **git log --all**  
-  Muestra commits de todas las ramas.
+- **GIT STATUS**
+- **GIT DIFF**
+- **GIT RESET**
+  - **git reset --soft HEAD~1**  
+    Elimina el último commit, pero conservar los cambios en el área de staging
+  - **git reset --mixed HEAD**  
+    Deshace el git add sin perder los cambios
+  - **git reset --hard HEAD~1**  
+    Elimina el ultimo commit
 
-- **git log --pretty=format:"%h - %an - %s - %ar"**  
-  Da una vista compacta y legible:  
-  **%h**: hash corto, **%an**: autor, **%s**: mensaje, **%ar**: tiempo relativo
+- **GIT REVERT**
 
-## BRANCH
+---
 
-- **git branch**  
-  Lista ramas locales.
+## 🕓 Historial
 
-- **git branch -r**  
-  Lista ramas remotas.
+- **GIT LOG**
+  - **git log**  
+    Muestra una lista de commits.
+  - **git log -[numero]**  
+    Limita la cantidad de commits.
+  - **git log --author=[autor]**  
+    Muestra solo commits hechos por un autor específico.
+  - **git log --grep=[palabra]**  
+    Busca commits que contengan una palabra en el mensaje.
+  - **git log --since=["DD-MM-YYYY"] --until=["DD-MM-YYYY"]**  
+    Muestra commits entre dos fechas específicas.
+  - **git log --oneline**  
+    Muestra cada commit en una línea.
+  - **git log --graph**  
+    Muestra un gráfico ASCII del árbol de ramas.
+  - **git log --all**  
+    Muestra commits de todas las ramas.
+  - **git log --pretty=format:"%h - %an - %s - %ar"**  
+    Da una vista compacta y legible:  
+    **%h**: hash corto, **%an**: autor, **%s**: mensaje, **%ar**: tiempo relativo
 
-- **git branch -a**  
-  Lista todas las ramas.
+- **GIT LS-TREE**
+  - **git ls-tree -r --name-only HEAD**  
+    Lista todos los archivos que tiene el ultimo commit
+  - **git ls-tree -r --name-only [id commit]**  
+    Lista todos los archivos que tiene un commit determinado
+  - **git ls-tree HEAD:src/**  
+    Lista el contenido de la carpeta src/ en el último commit
+    
+- **GIT SHOW**
+- **GIT BLAME**
+- **GIT REFLOG**
+- **GIT SHORTLOG**
 
-- **git branch -v**  
-  Muestra el último commit de cada rama local.
+---
 
-- **git switch -c nueva-rama**  
-  Crea y cambia a nueva rama.
+## 🌿 Ramas
 
-- **git switch [nombre rama]**  
-  Cambia de rama.
+- **GIT BRANCH**
+  - **git branch**  
+    Lista ramas locales.
+  - **git branch -r**  
+    Lista ramas remotas.
+  - **git branch -a**  
+    Lista todas las ramas.
+  - **git branch -v**  
+    Muestra el último commit de cada rama local.
+  - **git branch -d / -D [nombre rama]**  
+    Elimina la rama (normal / forzado).
+  - **git branch -m [nombre nuevo]**  
+    Renombra la rama actual.
+  - **git branch -m [nombre viejo] [nombre nuevo]**  
+    Renombra otra rama.
+  - **git branch --merged**  
+    Ver ramas que ya fueron fusionadas a la actual.
+  - **git branch --no-merged**  
+    Ver ramas que no han sido fusionadas.
 
-- **git branch -d / -D [nombre rama]**  
-  Elimina la rama (normal / forzado).
+- **GIT SWITCH**
+  - **git switch -c nueva-rama**  
+    Crea y cambia a nueva rama.
+  - **git switch [nombre rama]**  
+    Cambia de rama.
 
-- **git branch -m [nombre nuevo]**  
-  Renombra la rama actual.
+- **GIT CHECKOUT**
+- **GIT MERGE**
+- **GIT REBASE**
+- **GIT CHERRY-PICK**
 
-- **git branch -m [nombre viejo] [nombre nuevo]**  
-  Renombra otra rama.
+---
 
-- **git branch --merged**  
-  Ver ramas que ya fueron fusionadas a la actual.
+## 🔄 Sincronización remota
 
-- **git branch --no-merged**  
-  Ver ramas que no han sido fusionadas.
+- **GIT REMOTE**
+- **GIT FETCH**
+- **GIT PULL**
+- **GIT PUSH**
 
-## RESTORE
+---
 
-- **git restore [nombre archivo]**  
-  Restaura archivo desde staging o commit.
+## 📁 Cambios temporales (Stash)
 
-- **git restore --source=[nombre rama o commit] [nombre archivo]**  
-  Restaura archivo desde otra rama.
+- **GIT STASH**
 
-## COMMIT
+---
 
-- **git commit -m [mensaje]**  
-  Guarda una instantánea del estado actual del proyecto en el historial de Git.
+## 🔍 Comparación y búsqueda
 
-- **git add .**  
-- **git commit --amend**  
-  Permite modificar el último commit, ya sea el mensaje o añadir archivos olvidados.
-  
-- **git add .**  
-- **git commit --amend --no-edit**  
-  Mantiene el mensaje anterior tal cual, útil para agregar un archivo que olvidaste.
+- **GIT DIFF**
+- **GIT GREP**
 
-## LS-TREE
+---
 
-- **git ls-tree -r --name-only HEAD**  
-  Lista todos los archivos que tiene el ultimo commit
+## 🧹 Limpieza y mantenimiento
 
-- **git ls-tree -r --name-only [id commit]**  
-  Lista todos los archivos que tiene un commit determinado
+- **GIT CLEAN**
+- **GIT GC**
+- **GIT FSCK**
+- **GIT PRUNE**
 
-- **git ls-tree HEAD:src/**  
-  Lista el contenido de la carpeta src/ en el último commit
+---
 
-## RESET
+## 📦 Etiquetas y versiones
 
-- **git reset --soft HEAD~1**  
-  Elimina el último commit, pero conservar los cambios en el área de staging
+- **GIT TAG**
+- **GIT DESCRIBE**
 
-- **git reset --mixed HEAD**  
-  Deshace el git add sin perder los cambios
+---
 
-- **git reset --hard HEAD~1**  
-  Elimina el ultimo commit
+## 🧪 Avanzado y otros
+
+- **GIT ARCHIVE**
+- **GIT BISECT**
+- **GIT SUBMODULE**
+- **GIT WORKTREE**
+- **GIT NOTES**
+- **GIT APPLY**
+- **GIT AM**
+- **GIT FORMAT-PATCH**
+
+---
