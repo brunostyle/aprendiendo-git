@@ -6,11 +6,19 @@
   - **git init**  
     Inicializa un nuevo repositorio Git en un directorio
 
-<!-- - **GIT CLONE** -->
+- **GIT CLONE**
+  - **git clone [url]**  
+    Copia un repositorio remoto a tu máquina local
+  - **git clone --depth [numero] [url]**  
+    Clona solo los últimos n commits
+  - **git clone --branch [nombre] [url]**  
+    Clona directamente una rama específica
 
 - **GIT CONFIG**
   - **git config --list**  
-    Muestra todas las configuraciones actuales.
+    Muestra todas las configuraciones actuales
+  - **git config --global -e**  
+    Muestra las configuraciones hechas por el usuario
   - **git config --global user.name [nombre]**  
     Define el nombre de usuario que se usará en todos los repos (a nivel global).
   - **git config --global user.email [email]**  
@@ -19,6 +27,8 @@
     Define el nombre solo para el repositorio actual.
   - **git config user.email [email]**  
     Define el email solo para el repositorio actual.
+  - **git config --global init.defaultBranch main**  
+    Cambiar el nombre de la rama principal por defecto
   - **git config --global core.editor "code --wait"**  
   - **git config --global -e**  
     Establece visual studio code como editor de configuración de git

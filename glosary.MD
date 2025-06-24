@@ -3,7 +3,7 @@
 ## 📦 Repositorio y configuración
 
 - **git init** – Inicializa un nuevo repositorio Git.
-<!-- - **git clone** – Clona un repositorio existente. -->
+- **git clone** – Clona un repositorio existente.
 - **git config** – Establece opciones de configuración (usuario, editor, alias, etc.).
 
 ---
