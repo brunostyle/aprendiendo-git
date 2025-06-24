@@ -108,7 +108,9 @@
     
 <!-- - **GIT SHOW** -->
 <!-- - **GIT BLAME** -->
-<!-- - **GIT REFLOG** -->
+- **GIT REFLOG**
+  - **git reflog**  
+    Muestra el historial de cambios en referencias
 <!-- - **GIT SHORTLOG** -->
 
 ---
