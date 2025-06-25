@@ -108,6 +108,12 @@
     Da una vista compacta y legible:  
     **%h**: hash corto, **%an**: autor, **%s**: mensaje, **%ar**: tiempo relativo
 
+- **GIT SHORTLOG**
+  - **git shortlog**  
+    Ideal para ver quién ha contribuido y cuántos commits hizo
+  - **git shortlog -se**  
+    Ver solo la cantidad de commits por autor y email
+
 - **GIT LS-TREE**
   - **git ls-tree -r --name-only HEAD**  
     Lista todos los archivos que tiene el ultimo commit
@@ -115,13 +121,13 @@
     Lista todos los archivos que tiene un commit determinado
   - **git ls-tree HEAD:src/**  
     Lista el contenido de la carpeta src/ en el último commit
-    
+
 <!-- - **GIT SHOW** -->
 <!-- - **GIT BLAME** -->
+
 - **GIT REFLOG**
   - **git reflog**  
     Muestra el historial de cambios en referencias
-<!-- - **GIT SHORTLOG** -->
 
 ---
 
