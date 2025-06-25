@@ -1,7 +1,6 @@
 # Comandos de Git
 
 ## 📦 Repositorio y configuración
-
 - **git init** – Inicializa un nuevo repositorio Git.
 - **git clone** – Clona un repositorio existente.
 - **git config** – Establece opciones de configuración (usuario, editor, alias, etc.).
@@ -9,24 +8,20 @@
 ---
 
 ## 📄 Archivos y cambios
-
 - **git add** – Añade archivos al área de preparación (staging).
 - **git restore** – Restaura archivos del historial o descarta cambios.
 
 ---
 
 ## 📥 Confirmaciones (commits)
-
 - **git commit** – Guarda los cambios en el historial.
 - **git status** – Muestra el estado del área de trabajo.
-<!-- - **git diff** – Muestra diferencias entre versiones de archivos. -->
 - **git reset** – Deshace cambios en el historial o el área de preparación.
 <!-- - **git revert** – Crea un nuevo commit que revierte uno anterior. -->
 
 ---
 
 ## 🕓 Historial
-
 - **git log** – Muestra el historial de commits.
 - **git shortlog** – Muestra un resumen del historial agrupado por autor.
 - **git ls-tree** – Lista todos los archivos de un commit.
@@ -37,7 +32,6 @@
 ---
 
 ## 🌿 Ramas
-
 - **git branch** – Lista o elimina ramas.
 - **git switch** – Crea y Cambia entre ramas.
 - **git merge** – Fusiona ramas.
@@ -46,8 +40,18 @@
 
 ---
 
-## 🔄 Sincronización remota
+## 📁 Cambios temporales (Stash)
+<!-- - **git stash** – Guarda cambios no confirmados temporalmente. -->
 
+---
+
+## 🔍 Comparación y búsqueda
+<!-- - **git diff** – Compara contenido entre ramas, commits o archivos. -->
+<!-- - **git grep** – Busca texto dentro del proyecto. -->
+
+---
+
+## 🔄 Sincronización remota
 <!-- - **git remote** – Administra repositorios remotos. -->
 <!-- - **git fetch** – Descarga cambios del repositorio remoto. -->
 <!-- - **git pull** – Descarga y fusiona cambios remotos. -->

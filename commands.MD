@@ -1,7 +1,6 @@
 # Comandos de Git
 
 ## 📦 Repositorio y configuración
-
 - **GIT INIT**
   - **git init**  
     Inicializa un nuevo repositorio Git en un directorio
@@ -42,7 +41,6 @@
 ---
 
 ## 📄 Archivos y cambios
-
 - **GIT ADD**
   - **git add [nombre archivo]**  
     Agrega archivos o cambios específicos al staging area
@@ -57,7 +55,6 @@
 ---
 
 ## 📥 Confirmaciones (commits)
-
 - **GIT COMMIT**
   - **git commit -m [mensaje]**  
     Guarda una instantánea del estado actual del proyecto en el historial de Git.
@@ -72,8 +69,6 @@
   - **git status --short**  
     Muestra el estado actual del directorio de trabajo y del área de preparación resumido
 
-<!-- - **GIT DIFF** -->
-
 - **GIT RESET**
   - **git reset --soft HEAD~1**  
     Elimina el último commit, pero conservar los cambios en el área de staging
@@ -87,7 +82,6 @@
 ---
 
 ## 🕓 Historial
-
 - **GIT LOG**
   - **git log**  
     Muestra una lista de commits.
@@ -133,7 +127,6 @@
 ---
 
 ## 🌿 Ramas
-
 - **GIT BRANCH**
   - **git branch**  
     Lista ramas locales.
@@ -169,8 +162,19 @@
 
 ---
 
-## 🔄 Sincronización remota
+## 📁 Cambios temporales (Stash)
+<!-- - **GIT STASH** -->
 
+---
+
+## 🔍 Comparación y búsqueda
+<!-- - **GIT DIFF** -->
+<!-- - **GIT GREP** -->
+
+---
+
+
+## 🔄 Sincronización remota
 <!-- - **GIT REMOTE** -->
 <!-- - **GIT FETCH** -->
 <!-- - **GIT PULL** -->

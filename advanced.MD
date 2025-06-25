@@ -1,17 +1,3 @@
-
-## 📁 Cambios temporales (Stash)
-
-- **git stash** – Guarda cambios no confirmados temporalmente.
-
----
-
-## 🔍 Comparación y búsqueda
-
-- **git diff** – Compara contenido entre ramas, commits o archivos.
-- **git grep** – Busca texto dentro del proyecto.
-
----
-
 ## 🧹 Limpieza y mantenimiento
 
 - **git clean** – Elimina archivos no rastreados del directorio de trabajo.
@@ -69,18 +55,6 @@
 
 
 
-## 📁 Cambios temporales (Stash)
-
-- **GIT STASH**
-
----
-
-## 🔍 Comparación y búsqueda
-
-- **GIT DIFF**
-- **GIT GREP**
-
----
 
 ## 🧹 Limpieza y mantenimiento
 
