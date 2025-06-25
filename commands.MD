@@ -27,6 +27,8 @@
     Define el nombre solo para el repositorio actual.
   - **git config user.email [email]**  
     Define el email solo para el repositorio actual.
+  - **git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)%an%C(reset) - %C(dim white)(%ar)%C(reset) - %C(bold white)%s%C(reset) %C(bold yellow)%d%C(reset)' --all"**  
+    Configura un alias para git log
   - **git config --global init.defaultBranch main**  
     Cambiar el nombre de la rama principal por defecto
   - **git config --global core.editor "code --wait"**  
@@ -70,6 +72,8 @@
 - **GIT STATUS**
   - **git status**  
     Muestra el estado actual del directorio de trabajo y del área de preparación
+  - **git status --short**  
+    Muestra el estado actual del directorio de trabajo y del área de preparación resumido
 
 <!-- - **GIT DIFF** -->
 
