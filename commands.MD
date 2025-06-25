@@ -64,10 +64,10 @@
 - **GIT COMMIT**
   - **git commit -m [mensaje]**  
     Guarda una instantánea del estado actual del proyecto en el historial de Git.
-  - **git commit --amend**  
-    Permite modificar el último commit, ya sea el mensaje o añadir archivos olvidados.
+  - **git commit --amend -m**  
+    Permite modificar el mensaje del último commit
   - **git commit --amend --no-edit**  
-    Mantiene el mensaje anterior tal cual, útil para agregar un archivo que olvidaste.
+    Mantiene el mensaje anterior, útil para agregar un archivo que olvidaste.
 
 - **GIT STATUS**
   - **git status**  
