@@ -11,8 +11,6 @@
 ## 📄 Archivos y cambios
 
 - **git add** – Añade archivos al área de preparación (staging).
-<!-- - **git mv** – Mueve o renombra archivos. -->
-<!-- - **git rm** – Elimina archivos del repositorio. -->
 - **git restore** – Restaura archivos del historial o descarta cambios.
 
 ---

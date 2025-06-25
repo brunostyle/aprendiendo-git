@@ -49,9 +49,6 @@
   - **git add .**  
     Agrega todos los cambios del directorio actual y subdirectorios al staging area
 
-<!-- - **GIT MV** -->
-<!-- - **GIT RM** -->
-
 - **GIT RESTORE**
   - **git restore [nombre archivo]**  
     Restaura archivo desde staging o commit.
