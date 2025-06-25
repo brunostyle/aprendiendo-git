@@ -41,7 +41,7 @@
 ---
 
 ## 📁 Cambios temporales (Stash)
-<!-- - **git stash** – Guarda cambios no confirmados temporalmente. -->
+- **git stash** – Guarda cambios no confirmados temporalmente.
 
 ---
 
