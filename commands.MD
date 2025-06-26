@@ -109,6 +109,19 @@
   - **git shortlog -se**  
     Ver solo la cantidad de commits por autor y email
 
+- **GIT SHOW**
+  - **git show**  
+    Muestra el último commit (mensaje, autor, fecha, y cambios realizados)
+  - **git show [hash]**  
+    Muestra un commit específico por hash
+  - **git show --name-only --oneline**  
+    Muestra solo los nombres de archivos modificados.
+  - **git show --name-status --oneline**  
+    Muestra el nombre de archivos y el tipo de cambio
+      - A = Agregado
+      - M = Modificado
+      - D = Eliminado
+
 - **GIT LS-TREE**
   - **git ls-tree -r --name-only HEAD**  
     Lista todos los archivos que tiene el ultimo commit
@@ -117,7 +130,6 @@
   - **git ls-tree HEAD:src/**  
     Lista el contenido de la carpeta src/ en el último commit
 
-<!-- - **GIT SHOW** -->
 <!-- - **GIT BLAME** -->
 
 - **GIT REFLOG**

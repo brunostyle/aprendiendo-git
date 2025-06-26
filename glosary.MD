@@ -24,8 +24,8 @@
 ## 🕓 Historial
 - **git log** – Muestra el historial de commits.
 - **git shortlog** – Muestra un resumen del historial agrupado por autor.
+- **git show** – Muestra detalles de un commit o de un objeto.
 - **git ls-tree** – Lista todos los archivos de un commit.
-<!-- - **git show** – Muestra detalles de un commit o de un objeto. -->
 <!-- - **git blame** – Muestra quién modificó cada línea de un archivo. -->
 - **git reflog** – Muestra el historial de cambios en referencias.
 
