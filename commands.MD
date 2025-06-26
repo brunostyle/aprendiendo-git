@@ -194,6 +194,10 @@
 <!-- - **GIT REMOTE** -->
 <!-- - **GIT FETCH** -->
 <!-- - **GIT PULL** -->
-<!-- - **GIT PUSH** -->
+- **GIT PUSH**
+  - **git push -u origin main**  
+    Establece una relación de seguimiento entre tu rama local y la rama remota. Después de usarla una vez, basta con git push sin argumentos
+  - **git push**  
+    Se utiliza para subir los cambios locales (commits) a un repositorio remoto
 
 ---
