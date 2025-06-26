@@ -46,7 +46,7 @@
 ---
 
 ## 🔍 Comparación y búsqueda
-<!-- - **git grep** – Busca texto dentro del proyecto. -->
+- **git grep** – Busca texto dentro del working directory.
 
 ---
 
