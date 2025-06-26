@@ -184,7 +184,6 @@
 ---
 
 ## 🔍 Comparación y búsqueda
-<!-- - **GIT DIFF** -->
 <!-- - **GIT GREP** -->
 
 ---

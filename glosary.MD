@@ -46,7 +46,6 @@
 ---
 
 ## 🔍 Comparación y búsqueda
-<!-- - **git diff** – Compara contenido entre ramas, commits o archivos. -->
 <!-- - **git grep** – Busca texto dentro del proyecto. -->
 
 ---
