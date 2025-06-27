@@ -51,7 +51,7 @@
 ---
 
 ## 🔄 Sincronización remota
-<!-- - **git remote** – Administra repositorios remotos. -->
+- **git remote** – Administra repositorios remotos.
 <!-- - **git fetch** – Descarga cambios del repositorio remoto. -->
 <!-- - **git pull** – Descarga y fusiona cambios remotos. -->
 - **git push** – Envía cambios al repositorio remoto.

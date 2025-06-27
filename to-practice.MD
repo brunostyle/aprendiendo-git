@@ -22,3 +22,4 @@
 - **git reflog**
 - **git stash**
 - **git grep**
+- **git remote**
