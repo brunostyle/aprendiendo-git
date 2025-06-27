@@ -12,6 +12,7 @@
 - **git switch**
 - **git merge**
 - **git push**
+- **git pull**
 
 ## 📦 A PRACTICAR
 - **git clone**

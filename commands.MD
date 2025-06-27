@@ -232,7 +232,12 @@
     Muestra detalles de un remoto
     
 <!-- - **GIT FETCH** -->
-<!-- - **GIT PULL** -->
+- **GIT PULL**
+  - **git pull**  
+    Actualiza tu rama local con los cambios más recientes del repositorio remoto
+  - **git pull --rebase**  
+    En lugar de hacer un merge, aplica los cambios del remoto sobre tu trabajo local mediante rebase, manteniendo un historial más limpio
+
 - **GIT PUSH**
   - **git push -u origin main**  
     Establece una relación de seguimiento entre tu rama local y la rama remota. Después de usarla una vez, basta con git push sin argumentos
