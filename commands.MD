@@ -213,8 +213,8 @@
     Coincidencias exactas de palabras
   - **git grep --count [texto]**  
     Muestra solo la cantidad de coincidencias por archivo
----
 
+---
 
 ## 🔄 Sincronización remota
 <!-- - **GIT REMOTE** -->
@@ -225,5 +225,8 @@
     Establece una relación de seguimiento entre tu rama local y la rama remota. Después de usarla una vez, basta con git push sin argumentos
   - **git push**  
     Se utiliza para subir los cambios locales (commits) a un repositorio remoto
-
+  - **git push --force**  
+    Forza el push, sobrescribiendo el historial remoto. ⚠️ ¡Peligroso si otros trabajan sobre la misma rama!
+  - **git push --tags**  
+    Empuja todas las etiquetas locales al remoto
 ---
