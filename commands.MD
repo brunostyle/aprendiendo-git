@@ -171,7 +171,16 @@
   - **git merge [nombre rama]**  
     combina los cambios de una rama en otra
 
-<!-- - **GIT REBASE** -->
+- **GIT REBASE**
+  - **git rebase [nombre rama]**  
+    Mueve los commits de una rama y los aplica sobre la rama en la que estas ubicado
+  - **git rebase --continue**  
+    Continúa un rebase interrumpido por conflictos
+  - **git rebase --abort**  
+    Cancela un rebase en proceso y vuelve al estado anterior
+  - **git rebase -i HEAD~[numero]**  
+    Rebase interactivo: te permite reordenar, modificar, combinar o eliminar commits.
+
 <!-- - **GIT CHERRY-PICK** -->
 
 ---

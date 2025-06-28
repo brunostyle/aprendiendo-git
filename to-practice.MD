@@ -21,6 +21,7 @@
 
 ## 📦 A PRACTICAR
 - **git show**
+- **git rebase**
 - **git stash**
 - **git grep**
 - **git remote**
