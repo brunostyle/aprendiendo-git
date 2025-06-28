@@ -261,4 +261,6 @@
     Forza el push, sobrescribiendo el historial remoto. ⚠️ ¡Peligroso si otros trabajan sobre la misma rama!
   - **git push --tags**  
     Empuja todas las etiquetas locales al remoto
+  - **git push origin --delete [nombre rama]**  
+    Elimina una rama remota
 ---
