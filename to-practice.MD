@@ -2,12 +2,17 @@
 
 ## 📦 MEMORIZADOS
 - **git init**
+- **git clone**
+- **git config**
 - **git add**
 - **git restore**
 - **git commit**
 - **git status**
 - **git reset**
 - **git log**
+- **git shortlog**
+- **git ls-tree**
+- **git reflog**
 - **git branch**
 - **git switch**
 - **git merge**
@@ -15,12 +20,7 @@
 - **git pull**
 
 ## 📦 A PRACTICAR
-- **git clone**
-- **git config**
-- **git shortlog**
 - **git show**
-- **git ls-tree**
-- **git reflog**
 - **git stash**
 - **git grep**
 - **git remote**
