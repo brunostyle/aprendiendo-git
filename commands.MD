@@ -213,6 +213,7 @@
     Coincidencias exactas de palabras
   - **git grep --count [texto]**  
     Muestra solo la cantidad de coincidencias por archivo
+    
 ---
 
 
@@ -232,11 +233,14 @@
     Muestra detalles de un remoto
     
 <!-- - **GIT FETCH** -->
+
 - **GIT PULL**
   - **git pull**  
     Actualiza tu rama local con los cambios más recientes del repositorio remoto
   - **git pull --rebase**  
     En lugar de hacer un merge, aplica los cambios del remoto sobre tu trabajo local mediante rebase, manteniendo un historial más limpio
+  - **git pull --ff-only**  
+    Solo permite la integración si se puede hacer con fast-forward. Falla si no es posible.
 
 - **GIT PUSH**
   - **git push -u origin main**  
