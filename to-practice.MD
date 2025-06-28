@@ -12,6 +12,7 @@
 - **git switch**
 - **git merge**
 - **git push**
+- **git pull**
 
 ## 📦 A PRACTICAR
 - **git clone**
@@ -22,3 +23,4 @@
 - **git reflog**
 - **git stash**
 - **git grep**
+- **git remote**

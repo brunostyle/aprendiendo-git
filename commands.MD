@@ -219,9 +219,30 @@
 ---
 
 ## 🔄 Sincronización remota
-<!-- - **GIT REMOTE** -->
+- **GIT REMOTE**
+  - **git remote**  
+    Muestra una lista de nombres de remotos configurados
+  - **git remote -v**  
+    Muestra los remotos con sus URLs y si se usan para fetch o push
+  - **git remote add [nombre] [url]**  
+    Agrega un nuevo remoto
+  - **git remote remove [nombre]**  
+    Elimina un remoto
+  - **git remote rename [viejo] [nuevo]**  
+    Cambia el nombre de un remoto
+  - **git remote show [nombre]**  
+    Muestra detalles de un remoto
+    
 <!-- - **GIT FETCH** -->
-<!-- - **GIT PULL** -->
+
+- **GIT PULL**
+  - **git pull**  
+    Actualiza tu rama local con los cambios más recientes del repositorio remoto
+  - **git pull --rebase**  
+    En lugar de hacer un merge, aplica los cambios del remoto sobre tu trabajo local mediante rebase, manteniendo un historial más limpio
+  - **git pull --ff-only**  
+    Solo permite la integración si se puede hacer con fast-forward. Falla si no es posible.
+
 - **GIT PUSH**
   - **git push -u origin main**  
     Establece una relación de seguimiento entre tu rama local y la rama remota. Después de usarla una vez, basta con git push sin argumentos
