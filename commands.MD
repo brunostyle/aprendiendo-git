@@ -233,14 +233,14 @@
     Muestra una lista de nombres de remotos configurados
   - **git remote -v**  
     Muestra los remotos con sus URLs y si se usan para fetch o push
+  - **git remote show [nombre]**  
+    Muestra detalles de un remoto
   - **git remote add [nombre] [url]**  
     Agrega un nuevo remoto
   - **git remote remove [nombre]**  
     Elimina un remoto
   - **git remote rename [viejo] [nuevo]**  
     Cambia el nombre de un remoto
-  - **git remote show [nombre]**  
-    Muestra detalles de un remoto
     
 <!-- - **GIT FETCH** -->
 
