@@ -30,6 +30,8 @@
     Configura un alias para git log
   - **git config --global init.defaultBranch main**  
     Cambiar el nombre de la rama principal por defecto
+  - **git config --global pull.ff only**  
+    Configura git pull para que use fast-forward por defecto cuando sea posible
   - **git config --global core.editor "code --wait"**  
   - **git config --global -e**  
     Establece visual studio code como editor de configuración de git
