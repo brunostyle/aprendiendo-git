@@ -16,12 +16,12 @@
 - **git branch**
 - **git switch**
 - **git merge**
-- **git push**
+- **git rebase**
+- **git remote**
 - **git pull**
+- **git push**
 
 ## 📦 A PRACTICAR
 - **git show**
-- **git rebase**
 - **git stash**
 - **git grep**
-- **git remote**
