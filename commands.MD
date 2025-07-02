@@ -245,8 +245,6 @@
 - **GIT FETCH**
   - **git fetch**  
     Obtiene los cambios más recientes sin aplicarlos directamente a la rama actual
-  - **git fetch --dry-run**  
-    Muestra qué se traería, pero sin hacerlo
 
 - **GIT PULL**
   - **git pull**  
