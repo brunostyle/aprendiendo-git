@@ -11,6 +11,7 @@
 - **git reset**
 - **git log**
 - **git shortlog**
+- **git show**
 - **git ls-tree**
 - **git reflog**
 - **git branch**
@@ -18,11 +19,10 @@
 - **git merge**
 - **git rebase**
 - **git remote**
+- **git fetch**
 - **git pull**
 - **git push**
 
 ## 📦 A PRACTICAR
-- **git show**
 - **git stash**
 - **git grep**
-- **git fetch**
