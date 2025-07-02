@@ -242,7 +242,11 @@
   - **git remote rename [viejo] [nuevo]**  
     Cambia el nombre de un remoto
     
-<!-- - **GIT FETCH** -->
+- **GIT FETCH**
+  - **git fetch**  
+    Obtiene los cambios más recientes sin aplicarlos directamente a la rama actual
+  - **git fetch --dry-run**  
+    Muestra qué se traería, pero sin hacerlo
 
 - **GIT PULL**
   - **git pull**  

@@ -25,3 +25,4 @@
 - **git show**
 - **git stash**
 - **git grep**
+- **git fetch**
