@@ -44,13 +44,13 @@
 
 ## 📄 Archivos y cambios
 - **GIT ADD**
-  - **git add [nombre archivo]**  
+  - **git add [nombre-archivo]**  
     Agrega archivos o cambios específicos al staging area
   - **git add .**  
     Agrega todos los cambios del directorio actual y subdirectorios al staging area
 
 - **GIT RESTORE**
-  - **git restore [nombre archivo]**  
+  - **git restore [nombre-archivo]**  
     Restaura archivo desde staging o commit.
   - **git restore --source=[nombre rama o commit] [nombre archivo]**  
     Restaura archivo desde otra rama.
@@ -127,7 +127,7 @@
 - **GIT LS-TREE**
   - **git ls-tree -r --name-only HEAD**  
     Lista todos los archivos que tiene el ultimo commit
-  - **git ls-tree -r --name-only [id commit]**  
+  - **git ls-tree -r --name-only [id-commit]**  
     Lista todos los archivos que tiene un commit determinado
   - **git ls-tree HEAD:src/**  
     Lista el contenido de la carpeta src/ en el último commit
@@ -150,11 +150,11 @@
     Lista todas las ramas.
   - **git branch -v**  
     Muestra el último commit de cada rama local.
-  - **git branch -d / -D [nombre rama]**  
+  - **git branch -d / -D [nombre-rama]**  
     Elimina la rama (normal / forzado).
-  - **git branch -m [nombre nuevo]**  
+  - **git branch -m [nombre-nuevo]**  
     Renombra la rama actual.
-  - **git branch -m [nombre viejo] [nombre nuevo]**  
+  - **git branch -m [nombre-viejo] [nombre-nuevo]**  
     Renombra otra rama.
   - **git branch --merged**  
     Ver ramas que ya fueron fusionadas a la actual.
@@ -162,15 +162,15 @@
     Ver ramas que no han sido fusionadas.
 
 - **GIT SWITCH**
-  - **git switch -c [nombre rama]**  
+  - **git switch -c [nombre-rama]**  
     Crea y cambia a nueva rama.
-  - **git switch [nombre rama]**  
+  - **git switch [nombre-rama]**  
     Cambia de rama.
 
 - **GIT MERGE**
-  - **git merge [nombre rama]**  
+  - **git merge [nombre-rama]**  
     combina los cambios de una rama en otra
-  - **git merge --ff-only [nombre rama]**  
+  - **git merge --ff-only [nombre-rama]**  
     Solo permite el merge si se puede hacer como fast-forward, si no es posible, aborta el merge. Útil para mantener historiales lineales
   - **git merge --continue**  
     Continúa con el merge después de resolver conflictos manualmente
@@ -178,7 +178,7 @@
     Cancela un merge en proceso
 
 - **GIT REBASE**
-  - **git rebase [nombre rama]**  
+  - **git rebase [nombre-rama]**  
     Mueve los commits de una rama y los aplica sobre la rama en la que estas ubicado
   - **git rebase --continue**  
     Continúa un rebase interrumpido por conflictos
@@ -269,6 +269,7 @@
     Forza el push, sobrescribiendo el historial remoto. ⚠️ ¡Peligroso si otros trabajan sobre la misma rama!
   - **git push --tags**  
     Empuja todas las etiquetas locales al remoto
-  - **git push origin --delete [nombre rama]**  
+  - **git push origin --delete [nombre-rama]**  
     Elimina una rama remota
+    
 ---
