@@ -27,3 +27,4 @@
 ## 📦 A PRACTICAR
 - **git stash**
 - **git grep**
+- **git cherry-pick**

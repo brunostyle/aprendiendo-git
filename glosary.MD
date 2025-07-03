@@ -36,7 +36,7 @@
 - **git switch** – Crea y Cambia entre ramas.
 - **git merge** – Fusiona ramas.
 - **git rebase** – Reaplica commits sobre otra rama.
-<!-- - **git cherry-pick** – Aplica un commit específico a la rama actual. -->
+- **git cherry-pick** – Aplica un commit específico a la rama actual.
 
 ---
 

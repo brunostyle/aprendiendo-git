@@ -189,8 +189,16 @@
   - **git rebase -i HEAD~[numero]**  
     Rebase interactivo: te permite reordenar, modificar, combinar o eliminar commits.
 
-<!-- - **GIT CHERRY-PICK** -->
-
+- **GIT CHERRY-PICK**
+  - **git cherry-pick [hash]**  
+    Aplica uno o más commits específicos desde otra rama a la rama actual
+  - **git rebase --continue**  
+    Continúa el cherry-pick interrumpido por conflictos
+  - **git rebase --abort**  
+    Cancela el cherry-pick en proceso y vuelve al estado anterior
+  - **git cherry-pick --no-commit [hash]**  
+    Aplica los cambios al working directory y staging, pero no hace commit
+    
 ---
 
 ## 📁 Cambios temporales (Stash)
