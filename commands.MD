@@ -132,7 +132,9 @@
   - **git ls-tree HEAD:src/**  
     Lista el contenido de la carpeta src/ en el último commit
 
-<!-- - **GIT BLAME** -->
+- **GIT BLAME**
+  - **git blame [nombre-archivo]**  
+    Muestra quién modificó cada línea de un archivo
 
 - **GIT REFLOG**
   - **git reflog**  

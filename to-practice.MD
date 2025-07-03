@@ -13,6 +13,7 @@
 - **git shortlog**
 - **git show**
 - **git ls-tree**
+- **git blame**
 - **git reflog**
 - **git branch**
 - **git switch**
