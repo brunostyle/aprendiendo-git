@@ -253,6 +253,8 @@
 - **GIT FETCH**
   - **git fetch**  
     Obtiene los cambios más recientes sin aplicarlos directamente a la rama actual
+  - **git fetch --prune**  
+    Limpia referencias remotas locales obsoletas
 
 - **GIT PULL**
   - **git pull**  
