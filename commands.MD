@@ -170,6 +170,12 @@
 - **GIT MERGE**
   - **git merge [nombre rama]**  
     combina los cambios de una rama en otra
+  - **git merge --ff-only [nombre rama]**  
+    Solo permite el merge si se puede hacer como fast-forward, si no es posible, aborta el merge. Útil para mantener historiales lineales
+  - **git merge --continue**  
+    Continúa con el merge después de resolver conflictos manualmente
+  - **git merge --abort**  
+    Cancela un merge en proceso
 
 - **GIT REBASE**
   - **git rebase [nombre rama]**  
