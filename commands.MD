@@ -83,7 +83,7 @@
   - **git revert [hash]**  
     Crea un nuevo commit que revierte los cambios introducidos por un commit anterior
   - **git revert --continue**  
-    Continúa con el revert después de resolver conflictos manualmente
+    Continúa con el revert interrumpido por conflictos
   - **git revert --abort**  
     Cancela un revert en proceso y vuelve al estado anterior
   - **git revert --no-edit [hash]**  
