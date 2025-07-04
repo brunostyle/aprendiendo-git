@@ -88,7 +88,7 @@
     Cancela un revert en proceso y vuelve al estado anterior
   - **git revert --no-edit [hash]**  
     Mantiene el mensaje anterior
-    
+
 ---
 
 ## 🕓 Historial
@@ -181,9 +181,9 @@
   - **git merge [nombre-rama]**  
     combina los cambios de una rama en otra
   - **git merge --continue**  
-    Continúa con el merge después de resolver conflictos manualmente
+    Continúa con el merge interrumpido por conflictos
   - **git merge --abort**  
-    Cancela un merge en proceso
+    Cancela un merge en proceso y vuelve al estado anterior
   - **git merge --ff-only [nombre-rama]**  
     Solo permite el merge si se puede hacer como fast-forward, si no es posible, aborta el merge. Útil para mantener historiales lineales
 
