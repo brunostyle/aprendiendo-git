@@ -17,7 +17,7 @@
 - **git commit** – Guarda los cambios en el historial.
 - **git status** – Muestra el estado del área de trabajo.
 - **git reset** – Deshace cambios en el historial o el área de preparación.
-<!-- - **git revert** – Crea un nuevo commit que revierte uno anterior. -->
+- **git revert** – Crea un nuevo commit que revierte uno anterior.
 
 ---
 

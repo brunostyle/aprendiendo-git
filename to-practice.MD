@@ -28,3 +28,4 @@
 - **git stash**
 - **git grep**
 - **git cherry-pick**
+- **git revert**

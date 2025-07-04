@@ -79,8 +79,16 @@
   - **git reset --hard HEAD~1**  
     Elimina el ultimo commit
 
-<!-- - **GIT REVERT** -->
-
+- **GIT REVERT**
+  - **git revert [hash]**  
+    Crea un nuevo commit que revierte los cambios introducidos por un commit anterior
+  - **git revert --continue**  
+    Continúa con el revert después de resolver conflictos manualmente
+  - **git revert --abort**  
+    Cancela un revert en proceso y vuelve al estado anterior
+  - **git revert --no-edit [hash]**  
+    Mantiene el mensaje anterior
+    
 ---
 
 ## 🕓 Historial
