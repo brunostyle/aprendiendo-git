@@ -19,21 +19,18 @@
   - **git config --global -e**  
     Muestra las configuraciones hechas por el usuario
   - **git config --global user.name [nombre]**  
-    Define el nombre de usuario que se usará en todos los repos (a nivel global).
+    Define el nombre de usuario que se usará en todos los repos (a nivel global)
   - **git config --global user.email [email]**  
-    Define el correo que se usará en todos los repos (a nivel global).
+    Define el correo que se usará en todos los repos (a nivel global)
   - **git config user.name [nombre]**  
-    Define el nombre solo para el repositorio actual.
+    Define el nombre solo para el repositorio actual
   - **git config user.email [email]**  
-    Define el email solo para el repositorio actual.
-  - **git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)%an%C(reset) - %C(dim white)(%ar)%C(reset) - %C(bold white)%s%C(reset) %C(bold yellow)%d%C(reset)' --all"**  
-    Configura un alias para git log
+    Define el email solo para el repositorio actual
   - **git config --global init.defaultBranch main**  
     Cambiar el nombre de la rama principal por defecto
   - **git config --global pull.ff only**  
     Configura git pull para que use fast-forward por defecto cuando sea posible
   - **git config --global core.editor "code --wait"**  
-  - **git config --global -e**  
     Establece visual studio code como editor de configuración de git
   - **git config --global core.autocrlf true**  
     Estandariza los saltos de línea en windows
