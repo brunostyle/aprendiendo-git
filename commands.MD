@@ -169,10 +169,12 @@
     Ver ramas que no han sido fusionadas.
 
 - **GIT SWITCH**
-  - **git switch -c [nombre-rama]**  
-    Crea y cambia a nueva rama.
   - **git switch [nombre-rama]**  
     Cambia de rama.
+  - **git switch -c [nombre-rama]**  
+    Crea y cambia a nueva rama.
+  - **git switch --detach [hash]**  
+    Permite desplazarse a un commit específico sin alterar el estado de la rama principal
 
 - **GIT MERGE**
   - **git merge [nombre-rama]**  
