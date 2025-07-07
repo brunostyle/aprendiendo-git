@@ -106,9 +106,6 @@
     Muestra un gráfico ASCII del árbol de ramas.
   - **git log --all**  
     Muestra commits de todas las ramas.
-  - **git log --pretty=format:"%h - %an - %s - %ar"**  
-    Da una vista compacta y legible:  
-    **%h**: hash corto, **%an**: autor, **%s**: mensaje, **%ar**: tiempo relativo
 
 - **GIT SHORTLOG**
   - **git shortlog**  
