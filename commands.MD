@@ -3,78 +3,78 @@
 ## 📦 Repositorio y configuración
 - **GIT INIT**
   - **git init**  
-    Inicializa un nuevo repositorio Git en un directorio
+    Inicializa un nuevo repositorio Git vacío en el directorio actual
 
 - **GIT CLONE**
   - **git clone [url]**  
-    Copia un repositorio remoto a tu máquina local
+    Copia un repositorio remoto completo en tu máquina local
   - **git clone --depth [numero] [url]**  
-    Clona solo los últimos n commits
+    Clona solo los últimos n commits del repositorio remoto
   - **git clone --branch [nombre] [url]**  
-    Clona directamente una rama específica
+    Clona directamente una rama específica del repositorio remoto
 
 - **GIT CONFIG**
-  - **git config --list**  
-    Muestra todas las configuraciones actuales
+  - **git config --global --list**  
+    Muestra todas las configuraciones actuales de Git
   - **git config --global -e**  
-    Muestra las configuraciones hechas por el usuario
+    Abre el archivo de configuración global en el editor predeterminado
   - **git config --global user.name [nombre]**  
-    Define el nombre de usuario que se usará en todos los repos (a nivel global)
+    Establece tu nombre global para todos los repositorios
   - **git config --global user.email [email]**  
-    Define el correo que se usará en todos los repos (a nivel global)
+    Establece tu email global para todos los repositorios
   - **git config user.name [nombre]**  
-    Define el nombre solo para el repositorio actual
+    Establece tu nombre local solo para el repositorio actual
   - **git config user.email [email]**  
-    Define el email solo para el repositorio actual
+    Establece el email local solo para el repositorio actual
   - **git config --global init.defaultBranch main**  
-    Cambiar el nombre de la rama principal por defecto
+    Configura "main" como la rama por defecto en nuevos repositorios
   - **git config --global pull.ff only**  
     Configura git pull para que use fast-forward por defecto cuando sea posible
   - **git config --global core.editor "code --wait"**  
-    Establece visual studio code como editor de configuración de git
+    Establece Visual Studio Code como el editor predeterminado de Git
   - **git config --global core.autocrlf true**  
-    Estandariza los saltos de línea en windows
+    Normaliza los saltos de línea en entornos Windows
   - **git config --global core.autocrlf input**  
-    Estandariza los saltos de línea en linux/mac
+    Normaliza los saltos de línea en Linux/Mac
 
 ---
 
 ## 📄 Archivos y cambios
 - **GIT ADD**
   - **git add [nombre-archivo]**  
-    Agrega archivos o cambios específicos al staging area
+    Agrega un archivo específico al staging area para incluirlo en el próximo commit
   - **git add .**  
-    Agrega todos los cambios del directorio actual y subdirectorios al staging area
+    Agrega todos los archivos nuevos o modificados del directorio actual y subdirectorios al staging area
 
 - **GIT RESTORE**
   - **git restore [nombre-archivo]**  
-    Restaura archivo desde staging o commit.
+    Restaura el contenido del archivo desde el último commit o desde el staging area
 ---
 
 ## 📥 Confirmaciones (commits)
 - **GIT COMMIT**
   - **git commit -m [mensaje]**  
-    Guarda una instantánea del estado actual del proyecto en el historial de Git.
+    Crea un nuevo commit con los cambios agregados al staging area y asigna un mensaje descriptivo
   - **git commit -am [mensaje]**  
-    Agrega los archivos modificados ya rastreados al área de staging y hace el commit con el mensaje indicado
-  - **git commit --amend -m**  
-    Permite modificar el mensaje del último commit
+    Agrega los archivos modificados ya rastreados al staging area y hace el commit con el mensaje indicado
+  - **git commit --amend -m [mensaje]**  
+    Modifica el último commit, reemplazando su mensaje
   - **git commit --amend --no-edit**  
-    Mantiene el mensaje anterior, útil para agregar un archivo que olvidaste.
+    Mantiene el mensaje anterior, útil para agregar archivos que olvidaste
 
 - **GIT STATUS**
   - **git status**  
-    Muestra el estado actual del directorio de trabajo y del área de preparación
+    Muestra el estado actual del directorio de trabajo y del staging area
   - **git status --short**  
-    Muestra el estado actual del directorio de trabajo y del área de preparación resumido
+    Muestra el estado actual del directorio de trabajo y del staging area resumido
 
 - **GIT RESET**
   - **git reset --soft HEAD~1**  
-    Elimina el último commit, pero conservar los cambios en el área de staging
+    Elimina el último commit, pero conservar los cambios en el staging area
   - **git reset --mixed HEAD**  
-    Deshace el git add sin perder los cambios
+    Deshace el git add, quitando los cambios del staging area, pero manteniéndolos en el directorio de trabajo
   - **git reset --hard HEAD~1**  
-    Elimina el ultimo commit
+    Elimina el último commit y descarta todos los cambios realizados 
 
 - **GIT REVERT**
   - **git revert [hash]**  
@@ -84,42 +84,42 @@
   - **git revert --abort**  
     Cancela un revert en proceso y vuelve al estado anterior
   - **git revert --no-edit [hash]**  
-    Mantiene el mensaje anterior
+    Crea un nuevo commit que revierte los cambios introducidos por un commit anterior pero mantiene el mensaje anterior
 
 ---
 
 ## 🕓 Historial
 - **GIT LOG**
   - **git log**  
-    Muestra una lista de commits.
+    Muestra el historial completo de commits en la rama actual
   - **git log -[numero]**  
-    Limita la cantidad de commits.
+    Muestra los últimos n commits
   - **git log --author=[autor]**  
-    Muestra solo commits hechos por un autor específico.
+    Muestra solo commits hechos por un autor específico
   - **git log --grep=[palabra]**  
-    Busca commits que contengan una palabra en el mensaje.
+    Busca commits que contengan una palabra en el mensaje
   - **git log --since=["DD-MM-YYYY"] --until=["DD-MM-YYYY"]**  
-    Muestra commits entre dos fechas específicas.
+    Muestra commits entre dos fechas específicas
   - **git log --oneline**  
-    Muestra cada commit en una línea.
+    Muestra cada commit en una línea
   - **git log --graph**  
-    Muestra un gráfico ASCII del árbol de ramas.
+    Muestra un gráfico ASCII con la estructura de ramas y fusiones
   - **git log --all**  
-    Muestra commits de todas las ramas.
+    Muestra commits de todas las ramas
 
 - **GIT SHORTLOG**
   - **git shortlog**  
-    Ideal para ver quién ha contribuido y cuántos commits hizo
+    Muestra un resumen agrupado por autor con la lista de commits
   - **git shortlog -se**  
-    Ver solo la cantidad de commits por autor y email
+    Muestra solo la cantidad de commits por autor, incluyendo el correo electrónico
 
 - **GIT SHOW**
   - **git show**  
-    Muestra el último commit (mensaje, autor, fecha, y cambios realizados)
+    Muestra los detalles del último commit: autor, fecha, mensaje y cambios
   - **git show [hash]**  
-    Muestra un commit específico por hash
+    Muestra la información completa de un commit específico
   - **git show --name-only --oneline**  
-    Muestra solo los nombres de archivos modificados.
+    Muestra solo los nombres de archivos modificados
   - **git show --name-status --oneline**  
     Muestra el nombre de archivos y el tipo de cambio
       - A = Agregado
@@ -130,13 +130,13 @@
   - **git ls-tree -r --name-only HEAD**  
     Lista todos los archivos que tiene el ultimo commit
   - **git ls-tree -r --name-only [id-commit]**  
-    Lista todos los archivos que tiene un commit determinado
+    Lista todos los archivos que tiene un commit especifico
   - **git ls-tree -r --name-only HEAD:[nombre-carpeta]**  
-    Lista el contenido de una carpeta en el último commit
+    Lista todos los archivos que tiene una carpeta especifica
 
 - **GIT BLAME**
   - **git blame [nombre-archivo]**  
-    Muestra quién modificó cada línea de un archivo
+    Muestra quién modificó cada línea de un archivo y en qué commit
 
 - **GIT REFLOG**
   - **git reflog**  
@@ -147,55 +147,55 @@
 ## 🌿 Ramas
 - **GIT BRANCH**
   - **git branch**  
-    Lista ramas locales.
+    Muestra la lista de ramas locales
   - **git branch -r**  
-    Lista ramas remotas.
+    Muestra la lista de ramas remotas
   - **git branch -a**  
-    Lista todas las ramas.
+    Muestra la lista de todas las ramas
   - **git branch -v**  
-    Muestra el último commit de cada rama local.
+    Muestra el último commit de cada rama local
   - **git branch -d / -D [nombre-rama]**  
-    Elimina la rama (normal / forzado).
+    Elimina la rama (fusionada / no fusionada)
   - **git branch -m [nombre-nuevo]**  
-    Renombra la rama actual.
+    Renombra la rama actual
   - **git branch -m [nombre-viejo] [nombre-nuevo]**  
-    Renombra otra rama.
+    Renombra una rama específica
   - **git branch --merged**  
-    Ver ramas que ya fueron fusionadas a la actual.
+    Muestra las ramas que ya fueron fusionadas con la rama actual
   - **git branch --no-merged**  
-    Ver ramas que no han sido fusionadas.
+    Muestra las ramas que aún no fueron fusionadas con la rama actual
 
 - **GIT SWITCH**
   - **git switch [nombre-rama]**  
-    Cambia de rama.
+    Cambia a la rama especificada
   - **git switch -c [nombre-rama]**  
-    Crea y cambia a nueva rama.
+    Crea una nueva rama y cambia a ella
   - **git switch --detach [hash]**  
-    Permite desplazarse a un commit específico sin alterar el estado de la rama principal
+    Mueve el HEAD a un commit específico sin afectar ninguna rama
 
 - **GIT MERGE**
   - **git merge [nombre-rama]**  
-    combina los cambios de una rama en otra
+    Fusiona la rama especificada con la rama actual
   - **git merge --continue**  
     Continúa con el merge interrumpido por conflictos
   - **git merge --abort**  
     Cancela un merge en proceso y vuelve al estado anterior
   - **git merge --ff-only [nombre-rama]**  
-    Solo permite el merge si se puede hacer como fast-forward, si no es posible, aborta el merge. Útil para mantener historiales lineales
+    Realiza la fusión solo si se puede aplicar mediante fast-forward, si no es posible, aborta el merge. Útil para mantener historiales lineales
 
 - **GIT REBASE**
   - **git rebase [nombre-rama]**  
-    Mueve los commits de una rama y los aplica sobre la rama en la que estas ubicado
+    Aplica los commits de la rama actual sobre la rama especificada
   - **git rebase --continue**  
     Continúa un rebase interrumpido por conflictos
   - **git rebase --abort**  
     Cancela un rebase en proceso y vuelve al estado anterior
   - **git rebase -i HEAD~[numero]**  
-    Rebase interactivo: te permite reordenar, modificar, combinar o eliminar commits.
+    Rebase interactivo: te permite reordenar, modificar, combinar o eliminar commits
 
 - **GIT CHERRY-PICK**
   - **git cherry-pick [hash]**  
-    Aplica uno o más commits específicos desde otra rama a la rama actual
+    Aplica un commit específico desde otra rama a la rama actual
   - **git rebase --continue**  
     Continúa el cherry-pick interrumpido por conflictos
   - **git rebase --abort**  
@@ -250,7 +250,7 @@
 ## 🔄 Sincronización remota
 - **GIT REMOTE**
   - **git remote**  
-    Muestra una lista de nombres de remotos configurados
+    Muestra la lista de nombres de remotos configurados
   - **git remote -v**  
     Muestra los remotos con sus URLs y si se usan para fetch o push
   - **git remote show [nombre]**  
@@ -264,28 +264,28 @@
     
 - **GIT FETCH**
   - **git fetch**  
-    Obtiene los cambios más recientes sin aplicarlos directamente a la rama actual
+    Descarga los cambios más recientes del repositorio remoto, pero no los aplica en tu rama actual
   - **git fetch --prune**  
-    Limpia referencias remotas locales obsoletas
+    Limpia referencias locales de ramas remotas que ya no existen
 
 - **GIT PULL**
   - **git pull**  
-    Actualiza tu rama local con los cambios más recientes del repositorio remoto
+    Descarga y aplica los cambios del repositorio remoto en tu rama actual
   - **git pull --rebase**  
-    En lugar de hacer un merge, aplica los cambios del remoto sobre tu trabajo local mediante rebase, manteniendo un historial más limpio
+    Reemplaza el merge automático por un rebase, mantiene un historial más limpio
   - **git pull --ff-only**  
-    Solo permite la integración si se puede hacer con fast-forward. Falla si no es posible.
+    Solo realiza el pull si se puede aplicar como fast-forward. Falla si no es posible
 
 - **GIT PUSH**
   - **git push -u origin main**  
-    Establece una relación de seguimiento entre tu rama local y la rama remota. Después de usarla una vez, basta con git push sin argumentos
+    Establece una rama de seguimiento para futuras sincronizaciones. Después de usarla una vez, basta con git push sin argumentos
   - **git push**  
-    Se utiliza para subir los cambios locales (commits) a un repositorio remoto
+    Sube los commits locales al repositorio remoto
   - **git push --force**  
-    Forza el push, sobrescribiendo el historial remoto. ⚠️ ¡Peligroso si otros trabajan sobre la misma rama!
+    Forza el push, sobrescribe el historial remoto con tu historial local. ⚠️ ¡Peligroso si otros trabajan sobre la misma rama!
   - **git push --tags**  
-    Empuja todas las etiquetas locales al remoto
+    Sube todas las etiquetas locales al repositorio remoto
   - **git push origin --delete [nombre-rama]**  
-    Elimina una rama remota
+    Elimina una rama remota específica
     
 ---
