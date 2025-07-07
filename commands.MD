@@ -49,14 +49,14 @@
 - **GIT RESTORE**
   - **git restore [nombre-archivo]**  
     Restaura archivo desde staging o commit.
-  - **git restore --source=[nombre rama o commit] [nombre archivo]**  
-    Restaura archivo desde otra rama.
 ---
 
 ## 📥 Confirmaciones (commits)
 - **GIT COMMIT**
   - **git commit -m [mensaje]**  
     Guarda una instantánea del estado actual del proyecto en el historial de Git.
+  - **git commit -am [mensaje]**  
+    Agrega los archivos modificados ya rastreados al área de staging y hace el commit con el mensaje indicado
   - **git commit --amend -m**  
     Permite modificar el mensaje del último commit
   - **git commit --amend --no-edit**  
@@ -134,8 +134,8 @@
     Lista todos los archivos que tiene el ultimo commit
   - **git ls-tree -r --name-only [id-commit]**  
     Lista todos los archivos que tiene un commit determinado
-  - **git ls-tree HEAD:src/**  
-    Lista el contenido de la carpeta src/ en el último commit
+  - **git ls-tree -r --name-only HEAD:[nombre-carpeta]**  
+    Lista el contenido de una carpeta en el último commit
 
 - **GIT BLAME**
   - **git blame [nombre-archivo]**  
