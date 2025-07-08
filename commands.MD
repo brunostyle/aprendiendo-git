@@ -48,7 +48,7 @@
 
 - **GIT RESTORE**
   - **git restore [nombre-archivo]**  
-    Restaura el contenido del archivo desde el último commit o desde el staging area
+    Restaura el contenido del archivo desde el último commit
 ---
 
 ## 📥 Confirmaciones (commits)
