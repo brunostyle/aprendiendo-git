@@ -94,18 +94,20 @@
     Muestra el historial completo de commits en la rama actual
   - **git log -[numero]**  
     Muestra los últimos n commits
-  - **git log --author=[autor]**  
-    Muestra solo commits hechos por un autor específico
-  - **git log --grep=[palabra]**  
-    Busca commits que contengan una palabra en el mensaje
-  - **git log --since=["DD-MM-YYYY"] --until=["DD-MM-YYYY"]**  
-    Muestra commits entre dos fechas específicas
   - **git log --oneline**  
     Muestra cada commit en una línea
   - **git log --graph**  
     Muestra un gráfico ASCII con la estructura de ramas y fusiones
   - **git log --all**  
     Muestra commits de todas las ramas
+  - **git log --author=[autor]**  
+    Muestra solo commits hechos por un autor específico
+  - **git log --grep=[palabra]**  
+    Busca commits que contengan una palabra en el mensaje
+  - **git log --since=[fecha]**  
+    Muestra los commits desde esa fecha en adelante
+  - **git log --until=[fecha]**  
+    Muestra los commits hasta esa fecha inclusive
 
 - **GIT SHORTLOG**
   - **git shortlog**  
