@@ -234,16 +234,15 @@
     Busca solo en archivos específicos
   - **git grep [texto] HEAD**  
     Busca en el ultimo commit
-  - **git grep [texto] [hash]**  
-    Busca en un commit específico
-  - **git grep [texto] [rama]**  
-    Busca en una rama especifica
   - **git grep -i [texto]**  
-    Ignora mayúsculas/minúsculas
+    ignore-case
   - **git grep -w [texto]**  
-    Coincidencias exactas de palabras
-  - **git grep --count [texto]**  
-    Muestra solo la cantidad de coincidencias por archivo
+    word-regex
+  - **git grep -c [texto]**  
+    count
+  - **git grep -n [texto]**  
+    number-line
+    
 
 ---
 
