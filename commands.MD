@@ -118,9 +118,9 @@
     Muestra los detalles del último commit: autor, fecha, mensaje y cambios
   - **git show [hash]**  
     Muestra la información completa de un commit específico
-  - **git show --name-only --oneline**  
+  - **git show --name-only**  
     Muestra solo los nombres de archivos modificados
-  - **git show --name-status --oneline**  
+  - **git show --name-status**  
     Muestra el nombre de archivos y el tipo de cambio
       - A = Agregado
       - M = Modificado
